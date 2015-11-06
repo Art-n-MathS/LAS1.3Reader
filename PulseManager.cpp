@@ -52,7 +52,7 @@ void PulseManager::printPulseInfo(unsigned int i_pulse)
 //-----------------------------------------------------------------------------
 void PulseManager::addPoint(
         const Types::Data_Point_Record_Format_4 &i_point,
-        const char *wave_data,
+        const unsigned char *wave_data,
         int wave_offset
         )
 {

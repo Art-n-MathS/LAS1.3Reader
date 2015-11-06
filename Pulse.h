@@ -23,7 +23,7 @@ public:
    Pulse(const Types::Public_Header_Block &i_publicHeader,
        const Types::WF_packet_Descriptor &i_wv_info,
        const Types::Data_Point_Record_Format_4 &i_point_info,
-       const char *wave_data,
+       const unsigned char *wave_data,
        int wave_offset);
    //--------------------------------------------------------------------------
    /// @brief copy constructor

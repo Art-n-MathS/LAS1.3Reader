@@ -5,7 +5,7 @@
 int main(void)
 {
     std::cout.precision(5);
-    Las1_3_handler lasHandler("<DIRECTORY OF LAS FILE>");
+    Las1_3_handler lasHandler("LDR-FW-FW10_01-201009821.LAS");
     PulseManager *p = lasHandler.readFileAndGetPulseManager();
 
     std::cout << "the pulse manager has : " << p->getNumOfPulses() << " pulses\n";

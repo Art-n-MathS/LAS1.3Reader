@@ -11,11 +11,12 @@ Pulse::Pulse(
         const Types::Public_Header_Block &i_publicHeader,
         const Types::WF_packet_Descriptor &i_wv_info,
         const Types::Data_Point_Record_Format_4 &i_point_info,
-        const char *wave_data,
+        const unsigned char *wave_data,
         int wave_offset
         ):m_returns(0),
           m_waveOffset(wave_offset)
 {
+   std::cout << (int) i_point_info.gain << "\n";
    // sampling frequency in nanoseconds
    gmtl::Vec3f point_scale_factors(i_publicHeader.x_scale_factor,
                                 i_publicHeader.y_scale_factor,
