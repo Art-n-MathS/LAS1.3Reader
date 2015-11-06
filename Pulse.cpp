@@ -16,7 +16,6 @@ Pulse::Pulse(
         ):m_returns(0),
           m_waveOffset(wave_offset)
 {
-   std::cout << (int) i_point_info.gain << "\n";
    // sampling frequency in nanoseconds
    gmtl::Vec3f point_scale_factors(i_publicHeader.x_scale_factor,
                                 i_publicHeader.y_scale_factor,

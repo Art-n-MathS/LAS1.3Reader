@@ -156,7 +156,6 @@ void Las1_3_handler::read_public_header()
 void Las1_3_handler::read_variable_length_records()
 {
    Types::Variable_Length_Record_Header headdata_rec;
-   std::cout << " +++++++++++++++++++++++++++++++ " << public_header.number_of_variable_lenght_records << "\n";
    for(unsigned int i=0; i<public_header.number_of_variable_lenght_records;
       ++i)
    {
